@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="422ae676-7f83-4276-adfc-3db33de121a4" name="Changes" comment="добавлена функция exchange получения курсов валют">
+    <list default="true" id="422ae676-7f83-4276-adfc-3db33de121a4" name="Changes" comment="вместо поля ввода разместили выпадающий список валют">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange.py" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.exchange.executor": "Debug",
+    "Python.exchange.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "combobox"
   }
@@ -96,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730734565403</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="вместо поля ввода разместили выпадающий список валют">
+      <option name="closed" value="true" />
+      <created>1730819057396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730819057396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создан графический интерфейс" />
     <MESSAGE value="добавлена функция exchange получения курсов валют" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлена функция exchange получения курсов валют" />
+    <MESSAGE value="вместо поля ввода разместили выпадающий список валют" />
+    <option name="LAST_COMMIT_MESSAGE" value="вместо поля ввода разместили выпадающий список валют" />
   </component>
 </project>
