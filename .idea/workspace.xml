@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="422ae676-7f83-4276-adfc-3db33de121a4" name="Changes" comment="вместо поля ввода разместили выпадающий список валют">
+    <list default="true" id="422ae676-7f83-4276-adfc-3db33de121a4" name="Changes" comment="добавлены расшифровки к кодам валют">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange.py" afterDir="false" />
     </list>
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="combobox" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +53,7 @@
   "keyToString": {
     "Python.exchange.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "combobox"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -104,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730819057396</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавлены расшифровки к кодам валют">
+      <option name="closed" value="true" />
+      <created>1730820284956</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730820284956</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +130,7 @@
     <MESSAGE value="создан графический интерфейс" />
     <MESSAGE value="добавлена функция exchange получения курсов валют" />
     <MESSAGE value="вместо поля ввода разместили выпадающий список валют" />
-    <option name="LAST_COMMIT_MESSAGE" value="вместо поля ввода разместили выпадающий список валют" />
+    <MESSAGE value="добавлены расшифровки к кодам валют" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены расшифровки к кодам валют" />
   </component>
 </project>

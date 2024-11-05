@@ -6,29 +6,39 @@ from tkinter import *
 from tkinter import messagebox as mb
 from tkinter import ttk
 
-def update_cur_label(event):
-    code = combobox.get()
+
+def update_t_label(event):
+    code = t_combobox.get()
     name = cur[code]
-    cur_label.config(text=name)
+    t_label.config(text=name)
+
+
+def update_b_label(event):
+    code = b_combobox.get()
+    name = cur[code]
+    b_label.config(text=name)
+
 
 def exchange():
-    code = combobox.get()
+    t_code = t_combobox.get()
+    b_code = b_combobox.get()
 
-    if code:
+    if t_code and b_code:
         try:
-            response = requests.get("https://open.er-api.com/v6/latest/USD")
+            response = requests.get(f"https://open.er-api.com/v6/latest/{b_code}")
             response.raise_for_status()
             data = response.json()
-            if code in data["rates"]:
-                exchange_rate = data["rates"][code]
-                mb.showinfo("exchange rate",f"exchange {exchange_rate:.2f} {code} for 1 USD")
+            if t_code in data["rates"]:
+                exchange_rate = data["rates"][t_code]
+                mb.showinfo("exchange rate",f"exchange {exchange_rate:.2f} {t_code} for 1 {b_code}]")
 
             else:
-                mb.showerror("Error", f"currency {code} not found")
+                mb.showerror("Error", f"currency {t_code} not found")
         except Exception as e:
             mb.showerror("Error", f"Error: {e}")
     else:
         mb.showwarning("Warning", "Enter currency code")
+
 
 cur = {
     "RUB":"Российский рубль",
@@ -45,15 +55,26 @@ cur = {
 
 window = Tk()
 window.title("exchange rate")
-window.geometry("360x180")
+window.geometry("360x350")
 
-Label(text="choose currency code").pack(padx=10, pady=10)
-combobox = ttk.Combobox(values=list(cur.keys()))
-combobox.pack(padx=10, pady=10)
-combobox.bind("<<ComboboxSelected>>", update_cur_label)
+Label(text="base currency").pack(padx=10, pady=10)
+b_combobox = ttk.Combobox(values=list(cur.keys()))
+b_combobox.pack(padx=10, pady=10)
+b_combobox.bind("<<ComboboxSelected>>", update_b_label)
 
-cur_label = ttk.Label()
-cur_label.pack(padx=10, pady=10)
+b_label = ttk.Label()
+b_label.pack(padx=10, pady=10)
+
+
+Label(text="target currency").pack(padx=10, pady=10)
+t_combobox = ttk.Combobox(values=list(cur.keys()))
+t_combobox.pack(padx=10, pady=10)
+t_combobox.bind("<<ComboboxSelected>>", update_t_label)
+
+
+
+t_label = ttk.Label()
+t_label.pack(padx=10, pady=10)
 
 Button(text="get exchange", command=exchange).pack(padx=10, pady=10)
 
