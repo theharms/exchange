@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="422ae676-7f83-4276-adfc-3db33de121a4" name="Changes" comment="создан графический интерфейс">
+    <list default="true" id="422ae676-7f83-4276-adfc-3db33de121a4" name="Changes" comment="добавлена функция exchange получения курсов валют">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange.py" afterDir="false" />
     </list>
@@ -21,23 +21,28 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "theharms"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;theharms&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/theharms/exchange.git",
-    "accountId": "b9ec46c6-2bca-4cf2-bfe6-c2b2df532920"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/theharms/exchange.git&quot;,
+    &quot;accountId&quot;: &quot;b9ec46c6-2bca-4cf2-bfe6-c2b2df532920&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2oODohjZWyHoVqo8p8ChczAfckT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,9 +51,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.exchange.executor": "Run",
+    "Python.exchange.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "combobox"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -83,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730733450961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавлена функция exchange получения курсов валют">
+      <option name="closed" value="true" />
+      <created>1730734565403</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730734565403</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создан графический интерфейс" />
-    <option name="LAST_COMMIT_MESSAGE" value="создан графический интерфейс" />
+    <MESSAGE value="добавлена функция exchange получения курсов валют" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлена функция exchange получения курсов валют" />
   </component>
 </project>
